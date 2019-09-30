@@ -12,10 +12,12 @@ class Post {
     let image: UIImage?
     let title: String?
     let caption: String?
+    let timestamp: Date
     
-    init(image: UIImage?, title: String?, caption: String?) {
+    init(image: UIImage?, title: String?, caption: String?, timestamp: Date = Date()) {
         self.image = image
         self.title = title
         self.caption = caption
+        self.timestamp = timestamp
     }
 }

@@ -36,7 +36,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         cell.imageView.image = post.image
         cell.postTitleLabel.text = post.title
         cell.postCaptionLabel.text = post.caption
-        
+        cell.timestampLabel.text = "\(post.timestamp)"
         return cell
     }
 
